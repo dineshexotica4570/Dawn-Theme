@@ -1,0 +1,43 @@
+<section class="hero_banner bg_style" style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}')">
+  <div class="container">
+    <div class="hero_txt">
+      <h1>{{ section.settings.title }}</h1>
+      <p>{{ section.settings.subtitle }}</p>
+      <div class="banner_btn">
+        <a href="{{ section.settings.button_link }}" class="theme_btn">{{ section.settings.button_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Image Banner With Text",
+  "fields": [
+    {
+      "name": "Background Image",
+      "type": "image",
+      "label": "Background Image"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "Subtitle",
+      "type": "string",
+      "label": "Subtitle"
+    },
+    {
+      "name": "Button Text",
+      "type": "string",
+      "label": "Button Text"
+    },
+    {
+      "name": "Button Link",
+      "type": "string",
+      "label": "Button Link"
+    }
+  ]
+}
+{% endschema %}
