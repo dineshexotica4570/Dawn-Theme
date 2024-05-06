@@ -1,0 +1,28 @@
+{% comment %}
+  Section: Blog Section
+  Description: A section to display a grid of blog posts with images and excerpt.
+{% endcomment %}
+
+<section class="blog_section p_y">
+  <div class="container">
+    <div class="tittle_heading">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    <div class="row">
+      {% for block in section.blocks %}
+      <div class="col-md-4">
+        <div class="blog_inner">
+          <div class="blog_img">
+            <img src="{{ block.settings.image | asset_url }}" alt="img">
+          </div>
+          <div class="blog_content">
+            <h6>{{ block.settings.title }}</h6>
+            <p>{{ block.settings.excerpt }}</p>
+            <a href="{{ block.settings.link }}" class="blog_link">{{ block.settings.button_text }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
