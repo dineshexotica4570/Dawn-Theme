@@ -6,11 +6,10 @@
               <div class="col-lg-5 col-md-6 col-12 mb-md-4">
                 <div class="company_bio">
                   <div class="footer_logo">
-                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/header_logo.png?v=1714970930" alt="img"></a>
+                    <a href="#"><img src="{{ section.settings.footer-logo | img_url: '1024x1024' }}" alt="img"></a>
                   </div>
                   <p>
-                    Loreum is not an attorney or law firm and as such can not provide you with legal advice, however may
-                    refer you to an attorney who can provide you with legal advice.</p>
+                   {{ section.settings['footer-desc'] }}</p>
                 </div>
               </div>
 
