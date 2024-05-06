@@ -139,6 +139,7 @@
       "custom-footer": {
         "type": "custom-footer",
         "settings": {
+          "footer_menu": "footer_menu"
         }
       }
     },
