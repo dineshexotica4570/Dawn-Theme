@@ -3,7 +3,7 @@
     "image_banner_with_text_P3G3KT": {
       "type": "image-banner-with-text",
       "settings": {
-        "banner-img": "shopify:\/\/shop_images\/banner-img.jpg",
+        "banner-imgss": "shopify:\/\/shop_images\/banner-img.jpg",
         "heading": "Save Big With Our Car Rental",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
         "button-text": "Get In Touch",
