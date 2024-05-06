@@ -73,3 +73,28 @@
       </div>
     </footer>
 
+{% schema %}
+
+{
+  "name": "Footer Settings",
+  "settings": [
+    {
+      "type": "footer",
+      "content": "Footer Menu"
+    },
+    {
+      "type": "select",
+      "id": "footer_menu",
+      "label": "Select Menu",
+      "options": [
+        { "value": "main_menu", "label": "Main Menu" },
+        { "value": "secondary_menu", "label": "Secondary Menu" },
+        { "value": "custom_menu", "label": "Custom Menu" }
+        // Add more options as needed
+      ],
+      "default": "main_menu"
+    }
+  ]
+}
+
+{% endschema %}
