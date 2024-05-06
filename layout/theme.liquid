@@ -38,7 +38,7 @@
       <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
-      
+
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -310,13 +310,13 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-group' %}
+    {% sections 'custom-header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-    {% sections 'footer-group' %}
+    {% sections 'custom-footer' %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
