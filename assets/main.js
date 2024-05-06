@@ -17,16 +17,16 @@ $('.features_cars .row').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-prevArrow: "<img class='slick-prev' src='assets/img/prev.png'>",
-nextArrow: "<img class='slick-next' src='assets/img/next.png'>",
+prevArrow: "<img class='slick-prev' src='https://cdn.shopify.com/s/files/1/0871/2844/1112/files/prev.png?v=1714970930'>",
+nextArrow: "<img class='slick-next' src='https://cdn.shopify.com/s/files/1/0871/2844/1112/files/next.png?v=1714970930'>",
 });
 
 $('.testimonials_wrapper').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
-  prevArrow: "<img class='slick-prev' src='assets/img/prev.png'>",
-  nextArrow: "<img class='slick-next' src='assets/img/next.png'>",
+  prevArrow: "<img class='slick-prev' src='https://cdn.shopify.com/s/files/1/0871/2844/1112/files/prev.png?v=1714970930'>",
+  nextArrow: "<img class='slick-next' src='https://cdn.shopify.com/s/files/1/0871/2844/1112/files/next.png?v=1714970930'>",
   responsive: [
     {
       breakpoint: 768,
