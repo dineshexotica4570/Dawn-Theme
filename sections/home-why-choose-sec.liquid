@@ -1,0 +1,53 @@
+
+<section class="choose_us_sec p_y">
+      <div class="container">
+        <div class="row align-items-center g-0">
+          <div class="col-md-6">
+            <div class="choose_us_content">
+              
+              <span class="cap_txt">{{ section.settings['sub-heading'] }}</span>
+             <h2>{{ section.settings['heading'] }}</h2>
+              <p>{{ section.settings['description'] }}</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="choose_us_img">
+              <img src="{{ section.settings.our-mission-imgss | img_url: '1024x1024' }}" alt="choose us image" />
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+{% schema %}
+{
+  "name": "Home Why choose section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "why-choose-imgss",
+      "label": "choose image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "choose heading"
+    },
+    {
+      "type": "text",
+      "id": "sub-heading",
+      "label": "choose Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "choose Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Why choose section",
+      "category": "Home Why choose section"
+    }
+  ]
+}
+{% endschema %}
