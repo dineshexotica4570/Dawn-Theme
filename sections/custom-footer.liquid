@@ -1,72 +1,75 @@
 <footer class="footer p_y">
-  <div class="container">
-    <div class="row">
-      <div class="main_footer">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-6 col-12 mb-md-4">
-            <div class="company_bio">
-              <div class="footer_logo">
-                <a href="#"><img src="{{ 'header_logo.png' | asset_url }}" alt="img"></a>
+          <div class="main_footer">
+            <div class="row">
+              <div class="col-lg-5 col-md-6 col-12 mb-md-4">
+                <div class="company_bio">
+                  <div class="footer_logo">
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/header_logo.png?v=1714970930" alt="img"></a>
+                  </div>
+                  <p>
+                    Loreum is not an attorney or law firm and as such can not provide you with legal advice, however may
+                    refer you to an attorney who can provide you with legal advice.</p>
+                </div>
               </div>
-              <p>
-                Loreum is not an attorney or law firm and as such cannot provide you with legal advice, however may
-                refer you to an attorney who can provide you with legal advice.</p>
-            </div>
-          </div>
 
-          <div class="col-lg-2 col-md-6 col-12 mb-md-4">
-            <div class="footer_link_list">
-              <div class="title-head">
-                <h4>Quick Links</h4>
-              </div>
-              <ul class="quick_links">
+              <div class="col-lg-2 col-md-6 col-12 mb-md-4">
+                <div class="footer_link_list">
+                  <div class="title-head">
+                    <h4>Quick Links</h4>
+                  </div>
+                    <ul class="quick_links">
                 {% for link in settings.footer_menu.links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
                 {% endfor %}
               </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mb-md-4">
-            <div class="footer_link_list">
-              <div class="title-head">
-                <h4>Quick Support</h4>
+
+                </div>
               </div>
-              <ul class="quick_links">
-                <li>
-                  <a href="tel:310-890-0852"><img src="{{ 'phone.png' | asset_url }}" alt="img"> 310-890-0852</a>
-                </li>
-                <li>
-                  <a href="mailto:info@xclusivecars.com"><img src="{{ 'email.png' | asset_url }}" alt="img"> info@xclusivecars.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-12 mb-md-4">
-            <div class="footer_link_list">
-              <div class="title-head">
-                <h4>Follow Us</h4>
+              <div class="col-lg-3 col-md-6 col-12 mb-md-4">
+                <div class="footer_link_list">
+                  <div class="title-head">
+                    <h4>Quick Support</h4>
+                  </div>
+                  <ul class="quick_links">
+                    <li>
+                      <a href=""><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/phone.png?v=1714970930" alt="img"> 310-890-0852</a>
+                    </li>
+                    <li>
+                      <a href=""><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/email.png?v=1714970931" alt="img"> info@xclusivecars.com</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="socila_link">
-                <ul>
-                  <li><a href="#"><img src="{{ 'facebook.png' | asset_url }}" alt="img"></a></li>
-                  <li><a href="#"><img src="{{ 'youtube.png' | asset_url }}" alt="img"></a></li>
-                  <li><a href="#"><img src="{{ 'twitter.png' | asset_url }}" alt="img"></a></li>
-                  <li><a href="#"><img src="{{ 'instagram.png' | asset_url }}" alt="img"></a></li>
-                </ul>
+              <div class="col-lg-2 col-md-6 col-12 mb-md-4">
+
+                <div class="footer_link_list">
+                  <div class="title-head">
+                    <h4>Follow Us</h4>
+                  </div>
+                  <div class="socila_link">
+                    <ul>
+                      <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/facebook.png?v=1714970931" alt="img"></a></li>
+                      <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/youtube.png?v=1714970930" alt="img"></a></li>
+                      <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/twitter.png?v=1714970930" alt="img"></a></li>
+                      <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/instagram.png?v=1714970930" alt="img"></a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="copyright_bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>© {{ 'now' | date: '%Y' }} xclusivecars | All Rights Reserved.</p>
+      <div class="copyright_bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© 2022 xclusivecars | All Rights Reserved.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+
