@@ -1,4 +1,11 @@
-{%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+<section class="contact bg_style p_y" style="background-image:url(assets/img/contact_bg.png)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contact_form_box">
+              <h2 class="heading_title">{{ section.settings['heading'] }}</h2>
+              <p>{{ section.settings['description'] }}</p>
+              {%- form 'contact', id: 'ContactForm', class: contact_form_set -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
           {% render 'icon-success' %}
@@ -23,7 +30,7 @@
       <div class="contact__fields">
         <div class="field">
           <input
-            class="field__input"
+            class="form-control form-control "
             autocomplete="name"
             type="text"
             id="ContactForm-name"
@@ -38,7 +45,7 @@
             autocomplete="email"
             type="email"
             id="ContactForm-email"
-            class="field__input"
+            class="form-control "
             name="contact[email]"
             spellcheck="false"
             autocapitalize="off"
@@ -70,7 +77,7 @@
         <input
           type="tel"
           id="ContactForm-phone"
-          class="field__input"
+          class="form-control field__input"
           autocomplete="tel"
           name="contact[{{ 'templates.contact.form.phone' | t }}]"
           pattern="[0-9\-]*"
@@ -83,7 +90,7 @@
         <textarea
           rows="10"
           id="ContactForm-body"
-          class="text-area field__input"
+          class="text-area form-control "
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
           placeholder="{{ 'templates.contact.form.comment' | t }}"
         >
@@ -99,3 +106,34 @@
         </button>
       </div>
     {%- endform -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% schema %}
+{
+  "name": "Home Contact Form",
+  "settings": [
+   
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Contact heading"
+    }, 
+   {
+      "type": "text",
+      "id": "description",
+      "label": "Contact Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Contact Form",
+      "category": "Home Contact Form"
+    }
+  ]
+}
+{% endschema %}
