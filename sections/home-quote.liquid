@@ -1,0 +1,56 @@
+
+ <section class="get_quotes_sec bg_style p_y" style="background-image: url('{{ section.settings.quote-imgss | img_url: '1024x1024' }}')">
+      <div class="container">
+        <div class="row align-items-center g-0">
+          <div class="col-md-6">
+            <div class="get_quotes_content">
+              <span class="cap_txt">{{ section.settings['sub-heading'] }}</span>
+              <h2>{{ section.settings['heading'] }}</h2>
+               <a href="{{ section.settings['button-url'] }}" class="theme_btn">{{ section.settings['button-text'] }}</a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% schema %}
+{
+  "name": "Home Quote section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "quote-imgss",
+      "label": "Quote image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Quote heading"
+    },
+    {
+      "type": "text",
+      "id": "sub-heading",
+      "label": "Quote Sub heading"
+    },
+    
+    {
+      "type": "text",
+      "id": "button-text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button-url",
+      "label": "URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Quote section",
+      "category": "Home Quote section"
+    }
+  ]
+}
+{% endschema %}
