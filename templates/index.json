@@ -81,6 +81,15 @@
         "heading": "Contact Us",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting."
       }
+    },
+    "home_why_choose_sec_aP7MqM": {
+      "type": "home-why-choose-sec",
+      "settings": {
+        "why-choose-imgss": "shopify:\/\/shop_images\/choose_us.png",
+        "heading": "WHY CHOOSE US",
+        "sub-heading": "Best valued deals you will ever find",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."
+      }
     }
   },
   "order": [
@@ -90,6 +99,7 @@
     "home_our_mission_sec_xLnedj",
     "custom_blog_section_mVnQcD",
     "home_quote_HegCTg",
-    "custom_contact_section_qpAHcL"
+    "custom_contact_section_qpAHcL",
+    "home_why_choose_sec_aP7MqM"
   ]
 }
