@@ -1,14 +1,14 @@
 <section class="blog_section p_y">
   <div class="container">
     <div class="tittle_heading">
-      <h2>{{ section.settings.heading }}</h2>
+      <h2>Our Blog</h2>
     </div>
     <div class="row">
-      {% for article in blogs[section.settings.blog].articles limit: section.settings.post_limit %}
-      <div class="col-md-{{ 12 | divided_by: section.settings.columns_desktop }}">
+      {% for article in blogs.news.articles %}
+      <div class="col-md-4">
         <div class="blog_inner">
           <div class="blog_img">
-            <img src="{{ article.image.src | img_url: 'medium' }}" alt="{{ article.image.alt | escape }}">
+            <img src="{{ article.image.src | img_url: 'medium' }}" alt="{{ article.title }}">
           </div>
           <div class="blog_content">
             <h6>{{ article.title }}</h6>
