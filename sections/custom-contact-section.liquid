@@ -1,4 +1,4 @@
-<section class="contact bg_style p_y" style="background-image:url(assets/img/contact_bg.png)">
+<section class="contact bg_style p_y" style="background-image:url('{{ section.settings.banner-imgss | img_url: '1024x1024' }}')">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -117,7 +117,11 @@
 {
   "name": "Home Contact Form",
   "settings": [
-   
+   {
+      "type": "image_picker",
+      "id": "contact-imgss",
+      "label": "contact image"
+    },
     {
       "type": "text",
       "id": "heading",
