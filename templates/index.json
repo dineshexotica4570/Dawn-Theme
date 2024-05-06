@@ -48,11 +48,22 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "home_quote_HegCTg": {
+      "type": "home-quote",
+      "settings": {
+        "quote-imgss": "shopify:\/\/shop_images\/qoutes_img.png",
+        "heading": "You start the engine and your adventure begins",
+        "sub-heading": "GET A QUOTE TODAY!",
+        "button-text": "Get In Touch",
+        "button-url": ""
+      }
     }
   },
   "order": [
     "image_banner_with_text_P3G3KT",
     "home_about_section_Gbb6ki",
-    "featured_collection"
+    "featured_collection",
+    "home_quote_HegCTg"
   ]
 }
