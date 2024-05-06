@@ -9,14 +9,25 @@
     </div>
   </div>
 </section>
-// Shopify Schema
+
 {% schema %}
 {
   "name": "Image Banner With Text",
   "presets": [
     {
-      "name": "Image Banner With Text - Default",
-      "category": "Image"
+      "name": "t:sections.image-banner.presets.name",
+      "category": "Image",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
     }
   ],
   "settings": [
@@ -48,3 +59,4 @@
   ]
 }
 {% endschema %}
+
