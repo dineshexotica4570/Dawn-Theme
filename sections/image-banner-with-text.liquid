@@ -1,3 +1,17 @@
+
+
+<section class="hero_banner bg_style" style="background-image: url('{{ section.settings['banner-img'] }}')">
+  <div class="container">
+    <div class="hero_txt">
+      <h1>{{ section.settings['heading'] }}</h1>
+      <p>{{ section.settings['description'] }}</p>
+      <div class="banner_btn">
+        <a href="{{ section.settings['button-url'] }}" class="theme_btn">{{ section.settings['button-text'] }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
 {
   "name": "Banner section",
@@ -36,15 +50,3 @@
   ]
 }
 {% endschema %}
-
-<section class="hero_banner bg_style" style="background-image: url('{{ section.settings['banner-img'] }}')">
-  <div class="container">
-    <div class="hero_txt">
-      <h1>{{ section.settings['heading'] }}</h1>
-      <p>{{ section.settings['description'] }}</p>
-      <div class="banner_btn">
-        <a href="{{ section.settings['button-url'] }}" class="theme_btn">{{ section.settings['button-text'] }}</a>
-      </div>
-    </div>
-  </div>
-</section>
