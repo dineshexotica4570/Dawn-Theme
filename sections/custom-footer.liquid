@@ -21,13 +21,10 @@
                    {% assign selected_menu = settings.footer_menu %}
 
 <ul class="footer-menu">
-  {% case selected_menu %}
-    {% when 'main_menu' %}
-      {% include 'main-menu' %} 
-    {% when 'footer_menu' %}
-      {% include 'footer_menu' %} 
-  {% endcase %}
-</ul>
+   {% for link in linklists.footer_menu.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+                </ul>
 
 
 
