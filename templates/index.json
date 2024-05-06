@@ -49,11 +49,6 @@
         "padding_bottom": 36
       }
     },
-    "blog_section_RedM4h": {
-      "type": "blog-section",
-      "settings": {
-      }
-    },
     "home_quote_HegCTg": {
       "type": "home-quote",
       "settings": {
@@ -63,13 +58,21 @@
         "button-text": "Get In Touch",
         "button-url": ""
       }
+    },
+    "custom_contact_section_qpAHcL": {
+      "type": "custom-contact-section",
+      "settings": {
+        "contact-imgss": "shopify:\/\/shop_images\/contact_bg.png",
+        "heading": "Contact Us",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting."
+      }
     }
   },
   "order": [
     "image_banner_with_text_P3G3KT",
     "home_about_section_Gbb6ki",
     "featured_collection",
-    "blog_section_RedM4h",
-    "home_quote_HegCTg"
+    "home_quote_HegCTg",
+    "custom_contact_section_qpAHcL"
   ]
 }
