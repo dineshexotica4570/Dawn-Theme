@@ -19,18 +19,17 @@
                   <div class="title-head">
                     <h4>Quick Links</h4>
                   </div>
-                    {% assign selected_menu = settings.footer_menu %}
+                   {% assign selected_menu = settings.footer_menu %}
 
 <ul class="footer-menu">
   {% case selected_menu %}
     {% when 'main_menu' %}
       {% include 'main-menu' %} 
     {% when 'footer_menu' %}
-      {% include 'footer_menu' %} 
-   
-   
+      {% include 'footer-menu' %} 
   {% endcase %}
 </ul>
+
 
 
                 </div>
@@ -89,6 +88,16 @@
     {
       "type": "header",
       "content": "Footer Menu"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer-logo",
+      "label": "Footer Logo"
+    },
+    {
+      "type": "textarea",
+      "id": "footer-desc",
+      "label": "Footer Description"
     },
     {
       "type": "select",
