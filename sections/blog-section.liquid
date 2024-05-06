@@ -1,0 +1,24 @@
+<!-- Assuming you're in a section or template file -->
+<section class="news-section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Latest News</h2>
+    </div>
+    <div class="row">
+      {% for article in blogs.news.articles %}
+        <div class="col-md-4">
+          <div class="blog-inner">
+            <div class="blog-img">
+              <img src="{{ article.image.src | img_url: 'medium' }}" alt="{{ article.title }}">
+            </div>
+            <div class="blog-content">
+              <h6>{{ article.title }}</h6>
+              <p>{{ article.content | truncate: 100 }}</p>
+              <a href="{{ article.url }}" class="blog-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
