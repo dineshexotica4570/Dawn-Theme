@@ -31,19 +31,8 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-12 mb-md-4">
-                <div class="footer_link_list">
-                  <div class="title-head">
-                    <h4>Quick Support</h4>
-                  </div>
-                  <ul class="quick_links">
-                    <li>
-                      <a href=""><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/phone.png?v=1714970930" alt="img"> 310-890-0852</a>
-                    </li>
-                    <li>
-                      <a href=""><img src="https://cdn.shopify.com/s/files/1/0871/2844/1112/files/email.png?v=1714970931" alt="img"> info@xclusivecars.com</a>
-                    </li>
-                  </ul>
-                </div>
+                
+                {{ section.settings['footer_contact'] }}
                 
               </div>
               <div class="col-lg-2 col-md-6 col-12 mb-md-4">
@@ -78,13 +67,19 @@
       "label": "Footer Logo"
     },
     {
-  
-  "type": "html",
-  "id": "footer_icons",
-  "label": "Footer icons"
- 
-},
-
+    
+    "type": "html",
+    "id": "footer_icons",
+    "label": "Footer icons"
+    
+    },
+    {
+    
+    "type": "html",
+    "id": "footer_contact",
+    "label": "Footer Contact"
+    
+    },
     {
       "type": "textarea",
       "id": "footer-desc",
